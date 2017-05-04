@@ -1,0 +1,22 @@
+
+<div class="well bs-component">
+<form class="form-horizontal" action="/dialog/authorize/decision" method="post">
+  <fieldset>
+    <legend>
+<p>Hi <%= user.name %>!</p>
+<p><b><%= client.name %></b> is requesting access to your account.</p>
+<p>Do you approve?</p>
+    </legend>
+
+    <input name="transaction_id" type="hidden" value="<%= transactionId %>" />
+
+        <div class="form-group">
+      <div class="col-md-10 col-md-offset-2">
+        <button type="submit" value="Allow" id="allow" class="btn btn-primary ">Allow</button>
+        <button type="submit" value="Deny" name="cancel" id="deny" class="btn btn-default">Deny</button>
+      </div>
+    </div>
+
+      </fieldset>
+</form>
+ </div>
