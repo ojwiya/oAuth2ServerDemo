@@ -1,5 +1,9 @@
-oauth2 provider example
+oAuth2 provider example
 ===
+
+oAuth development server forked from [ojwiya/oAuth2ServerDemo](https://github.com/ojwiya/oAuth2ServerDemo)
+
+---
 
 This example shows a provider which grants tokens in exchange for codes for
 
@@ -10,8 +14,7 @@ Install
 ===
 
 ```bash
-git clone https://github.com/ojwiya/oAuth2ServerDemo.git
-pushd oauth2orize-demo
+git clone https://github.com/it-novum/oAuth2ServerDemo.git
 npm install
 ```
 
@@ -58,3 +61,28 @@ The standalone usable resources are
 And then some internal resources that are of no concern for standalone users or consumers
 
 * `POST /dialog/authorize/decision`, processes the allow / deny
+
+Clients
+===
+A predefined set of different _Client Ids_ and _Client Secrets_ can be found and modified in the file
+[db/clients.js](db/clients.js)
+
+| # | client_id     | client_secret            |
+|---|---------------|--------------------------|
+| 1 | `abc123`      | `ssh-secret`             |
+| 2 | `xyz123`      | `ssh-password`           |
+| 3 | `coding_test` | `bwZm5XC6HTlr3fcdzRnD`   |
+
+Users
+===
+A predefined set of different _Client Ids_ and _Client Secrets_ can be found and modified in the file
+[db/users.js](db/users.js)
+
+| # | Username     | Password        | Email                     |
+|---|--------------|-----------------|---------------------------|
+| 1 | `julie`      | `secret`        | `Julie.Smith@example.org` |
+| 2 | `joe`        | `password`      | `Joe.Davis@example.org`   |
+| 3 | `codingtest` | `password09876` | `codingtest@example.org`  |
+
+
+![Login screen](screenshots/login.js)
