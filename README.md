@@ -85,4 +85,4 @@ A predefined set of different _Client Ids_ and _Client Secrets_ can be found and
 | 3 | `codingtest` | `password09876` | `codingtest@example.org`  |
 
 
-![Login screen](screenshots/login.js)
+![Login screen](screenshots/login.png?raw=true)
